@@ -63,8 +63,8 @@ case $1 in
     echo "Done."
   ;;
   *)
-    echo "Usage: sudo $0 (-b|-g|-r)
-     -b : Backup hosts file for future restoration
+    echo "Usage: sudo $0 (-b|-g|-r|-p)
+     -b : Backup hosts file for future restoration (DO THIS FIRST)
      -g : Generate ad blocking hosts file
      -r : Restore original hosts file in case stuff goes sideways
      -p : Returns to previous hosts file in case stuff goes sideways
