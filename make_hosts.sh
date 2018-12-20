@@ -23,7 +23,7 @@ case $1 in
     echo "Starting with a fresh hosts file"
     cp /etc/hosts.initial /tmp/hosts.initial
     echo "Downloading ad blocking hosts files"
-    for i in https://adaway.org/hosts.txt http://winhelp2002.mvps.org/hosts.txt http://hosts-file.net/ad_servers.asp http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts\&showintro=0\&mimetype=plaintext ; do
+    for i in https://adaway.org/hosts.txt http://winhelp2002.mvps.org/hosts.txt http://hosts-file.net/ad_servers.txt http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts\&showintro=0\&mimetype=plaintext https://www.malwaredomainlist.com/hostslist/hosts.txt https://mirror.cedia.org.ec/malwaredomains/justdomains ; do
     echo "  $i..."  
     curl -s $i | grep -v ^# | grep -v localhost.localdomain$ | grep -v localhost$i | awk '{print "127.0.0.1 " $2}' >> /tmp/adblocklist.txt
     done
