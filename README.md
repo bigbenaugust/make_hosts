@@ -9,3 +9,7 @@ Usage: sudo make_hosts.sh (-b|-g|-r|-p)
 * -p : Returns to previous hosts file in case stuff goes sideways
     
 Run with -b first to save your initial/original hosts file.
+
+On some systemd machines, /etc/resolvconf/resolv.conf.d/head could be used instead. 
+
+Really, something like: https://github.com/anticapitalista/antiX-live/blob/master/block-advert.sh is a lot prettier and does the same sort of thing.  
