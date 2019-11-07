@@ -10,6 +10,6 @@ Usage: sudo make_hosts.sh (-b|-g|-r|-p)
     
 Run with -b first to save your initial/original hosts file.
 
-On some systemd machines, /etc/resolvconf/resolv.conf.d/head could be used instead. 
+On some systemd machines, /etc/resolvconf/resolv.conf.d/head could be used instead of /etc/hosts. 
 
 Really, something like: https://github.com/anticapitalista/antiX-live/blob/master/block-advert.sh is a lot prettier and does the same sort of thing.  
