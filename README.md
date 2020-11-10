@@ -10,6 +10,10 @@ Usage: sudo make_hosts.sh (-b|-g|-r|-p)
     
 Run with -b first to save your initial/original hosts file.
 
+Requires dos2unix to be installed on the system path for line break conversion. 
+
+The /etc/extraadhosts.txt file can be used for additional custom hosts file entries to be combined with everything else. 
+
 On some systemd machines, /etc/resolvconf/resolv.conf.d/head could be used instead of /etc/hosts. 
 
 Really, something like: https://github.com/anticapitalista/antiX-live/blob/master/block-advert.sh is a lot prettier and does the same sort of thing.  
